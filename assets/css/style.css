@@ -14,19 +14,23 @@
     background-color: #f4f4f4;
 }
 
-.ui-menu-color-home{
-    background-color: #e67e22;
-}
-
-.ui-menu-color-resume{
+.bg-color-work-history {
     background-color: #9b59b6;
 }
 
-.ui-menu-color-contact{
+.ui-menu-color-home {
+    background-color: #e67e22;
+}
+
+.ui-menu-color-resume {
+    background-color: #9b59b6;
+}
+
+.ui-menu-color-contact {
     background-color: #3498db;
 }
 
-.ui-menu-color-download{
+.ui-menu-color-download {
     background-color: #525252;
 }
 
@@ -62,6 +66,7 @@ h4 {
     float: none;
 }
 
+.history-heading,
 .section-heading {
     font-family: "Exo", sans-serif;
     font-weight: 300;
@@ -157,8 +162,8 @@ header {
 
 /*------------------------------------------Hover .css*/
 
-  /* Sweep To Bottom */
-  .hvr-sweep-to-bottom {
+/* Sweep To Bottom */
+.hvr-sweep-to-bottom {
     display: inline-block;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
@@ -169,8 +174,9 @@ header {
     transition-property: color;
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
-  }
-  .hvr-sweep-to-bottom:before {
+}
+
+.hvr-sweep-to-bottom:before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -189,25 +195,31 @@ header {
     transition-duration: 0.3s;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
-  }
-  .hvr-sweep-to-bottom:hover, .hvr-sweep-to-bottom:focus, .hvr-sweep-to-bottom:active {
+}
+
+.hvr-sweep-to-bottom:hover,
+.hvr-sweep-to-bottom:focus,
+.hvr-sweep-to-bottom:active {
     color: white;
-  }
-  .hvr-sweep-to-bottom:hover:before, .hvr-sweep-to-bottom:focus:before, .hvr-sweep-to-bottom:active:before {
+}
+
+.hvr-sweep-to-bottom:hover:before,
+.hvr-sweep-to-bottom:focus:before,
+.hvr-sweep-to-bottom:active:before {
     -webkit-transform: scaleY(1);
     transform: scaleY(1);
-  }
+}
 
-  /*------------------------------------------Footer*/
+/*------------------------------------------Footer*/
 
-  footer {
+footer {
     background-color: #525252;
     color: #fafafa;
     min-height: 120px;
-    margin: 0;  
-  }
-  
-  .cv-pdf i {
+    margin: 0;
+}
+
+.cv-pdf i {
     font-size: 18px;
     color: #fafafa;
     text-align: center;
@@ -216,17 +228,17 @@ header {
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
-  }
+}
 
-  .cv-pdf i:hover {
+.cv-pdf i:hover {
     color: #e84610;
-  }
+}
 
-  .social-links {
+.social-links {
     padding-bottom: 15px;
-  }
+}
 
-  .social-links li a i {
+.social-links li a i {
     width: 32px;
     height: 32px;
     padding: 12px 0;
@@ -240,26 +252,26 @@ header {
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
-  }
+}
 
-  .social-links li a i:hover {
+.social-links li a i:hover {
     background: #e84610;
-  }
+}
 
-  #footer-details {
+#footer-details {
     padding: 20px;
-  }
+}
 
-  /*------------------------------------------Three Reasons*/
+/*------------------------------------------Three Reasons*/
 
-  .three-reasons-icon {
+.three-reasons-icon {
     font-size: 26px;
     color: #e67e22;
-  }
+}
 
-  .three-reasons-heading {
+.three-reasons-heading {
     margin-bottom: 15px;
-  }
+}
 
 /*------------------------------------------Personal Info*/
 
@@ -315,4 +327,52 @@ header {
 
 .progress-section {
     margin: 40px 20px;
+}
+
+/*------------------------------------------Work History*/
+
+.history-heading {
+    color: #fafafa;
+    margin-bottom: 20px;
+}
+
+.timeline-item {
+    padding: 4em 2em 0em 2em;
+    position: relative;
+    color: #fafafa;
+    border-left: 1px solid;
+}
+
+.timeline-item p {
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item:before {
+    content: attr(data-dates);
+    position: absolute;
+    left: 2.5em;
+    top: 3em;
+    display: block;
+    font-family: "Exo", sans-serif;
+    font-weight: 500;
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item:after {
+    width: 12px;
+    height: 12px;
+    display: block;
+    top: 2.4em;
+    position: absolute;
+    left: -6px;
+    border-radius: 12px;
+    content: '';
+    background: #fafafa;
+}
+
+.history-items {
+    margin-bottom: 30px;
 }
